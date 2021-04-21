@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+		<!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+		<title>xtrmCAST Manager</title>
+
+		<!-- 부트스트랩 -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- <link href="css/bootstrap-treeview.css" rel="stylesheet"> -->
+		<!-- 폰트어썸 -->
+		<link rel="stylesheet" href="css/all.css">
+		<!-- 리셋 -->
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/default.css" rel="stylesheet">
+        
+		<!-- <link href="css/theme.css" rel="stylesheet"> -->
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap-treeview.js"></script>
+		<!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+		<!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.min.js"></script>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
+		<script type="text/javascript">
+			$(document).ready(function(){
+                $('.co_seach_input').bind('focus', function(){
+                    if($(this).val()!=''){
+                        $(this).next('.co_list').addClass('on');
+                    }
+                });
+                $(".co_seach_input").on("change keyup paste", function(){
+                    if($(this).val()!=''){
+                        $(this).next('.co_list').addClass('on');
+                    }
+                })
+                $('.co_seach_input').blur('focus', function(){
+                        $(this).next('.co_list').removeClass('on');
+                });
+			});
+		</script>
+	</head>
+	<body class="loginBody">
+		<div class="page_login contents">
+			<div class="panel panel-default login_form">
+                <div class="panel-body">
+                    <img class="logo-img" src="img/logo.png" />
+                    <form>
+                        <div class="form-group co_seach">
+                            <input type="text" class="form-control co_seach_input" id="" placeholder="검색할 업체를 입력 후 선택">
+                            <div class="list-group co_list">
+                                <li class="list-group-item disabled">입력한 업체가 존재하지 않습니다.</li>
+                                <li class="list-group-item">디코디피</li>
+                                <li class="list-group-item">효성ITX</li>
+                            </div>
+                              
+                          </div>
+                        <div class="form-group">
+                            <input type="text" id="" class="form-control" placeholder="아이디 입력" required autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="" class="form-control" placeholder="비밀번호 입력" required>
+                        </div>
+                        <div class="form-group">
+                            <div id="" class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Save ID
+                                </label>
+                            </div>
+                        </div>
+                        <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Log In</button>
+                    </form><!-- /form -->
+                </div>
+            </div>
+        </div>	
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2 logo"><img src="img/logo.png"/></div>
+                    <!-- <div class="col-xs-8 login_info" data-toggle="modal" data-target="#loginMember_list"><button type="button" class="btn btn-default">접속자 IP : 100.333.333.4  / 최근 로그인 : 2021-03-18 / 현재시간 : 2021-03-19  / 현재 접속운영자 : 0명</button></div> -->
+                    <div class="col-xs-8 login_info" data-toggle="modal" data-target="#loginMember_list">
+                        <ol class="breadcrumb">
+                            <li>접속자 IP : 100.333.333.4</li>
+                            <li>최근 로그인 : 2021-03-18</li>
+                            <li>현재시간 : 2021-03-19</li>
+                            <li>현재 접속운영자 : 0명</li>
+                        </ol>
+                    </div>
+                    <div class="col-xs-2 sitelink"><a href="http://www.dicodp.com" target="_blank">www.dicodp.com</a></div>
+                </div>
+                <!-- 현재 로그인 사용자 ID 모달 -->
+                <div class="modal fade" id="loginMember_list" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">현재 로그인중인 사용자 리스트</h4>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th>No</th>
+                                    <th>ID</th>
+                                    <th>로그인 시간</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>ddsdds</td>
+                                    <td>2021-03-18 13:24:43</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>ddsdds</td>
+                                    <td>2021-03-18 13:24:43</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>ddsdds</td>
+                                    <td>2021-03-18 13:24:43</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</body>
+</html>

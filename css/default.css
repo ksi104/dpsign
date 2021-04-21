@@ -1,0 +1,36 @@
+.float-right{float: right;}
+.container{width:1170px !important}
+.header .navbar-brand{padding:10px}
+.header .navbar-brand img{max-width: 100%;max-height: 100%;}
+.footer{position:absolute;bottom:0;left:0;width:100%;padding:15px 5px;background: #fff;height:77px;text-align: left !important;border-top:1px solid #ddd;border-bottom:1px solid #ddd;}
+.footer .logo img{max-width: 100%;max-height: 40px;}
+.footer .login_info{padding:0px 15px;text-align: center;cursor: pointer;}
+.footer .login_info .breadcrumb{border:1px solid #ddd}
+.footer .login_info:hover .breadcrumb{color: #286090;}
+.footer .sitelink{padding:9px 0;text-align: right;}
+.contents{padding-bottom:107px}
+.loginBody{background: #f1f1f1;}
+.page_login{display:flex;background:#f1f1f1;height:100%;overflow: hidden;}
+.page_login .login_form{margin:150px auto;padding:30px 20px;width:500px;text-align: center;}
+.page_login .logo-img{max-width: 200px;max-height:100px;}
+.page_login .login_form form{margin-top:50px;text-align: left;}
+.page_login .login_form .co_seach{position:relative}
+.page_login .login_form .co_list{display:none;position:absolute;top:34px;left:0;z-index:100;width:100%}
+.page_login .login_form .on{display:block;}
+
+.page_player .top_utill{padding:15px 0;}
+.page_player .player_group .group_list li{padding:7px 12px}
+.page_player .player_tb{border:1px solid #ddd}
+.page_player .player_tb tbody tr{cursor: pointer;}
+.page_player .player_tb tbody tr:hover{background:#eef6fa}
+.page_player .player_tb th{background: #f5f5f5;}
+.page_player .player_tb th:first-child{border-radius: 5px 0 0 0;}
+.page_player .player_tb .player_detail_td{padding:0;border:none}
+.page_player .player_tb .player_detail_div{display:none;padding:15px;border-top:1px solid #dfdfdf;background: #f9f9f9;}
+.page_player .player_tb .player_detail_div label{padding-top:7px;vertical-align: middle;margin-bottom: 0;}
+.page_player .player_tb .play_item .fa-play{color: #286090;}
+.page_player .player_tb .play_item .fa-stop{color: #449d44;}
+.page_player .player_tb .play_item .fa-pause{color: #ec971f;}
+.page_player .player_tb .play_item .fa-exclamation-circle{color:#c9302c}
+.page_player .player_bottom{padding:20px 0}
+.page_player .player_pagination{float:right;margin:0}
